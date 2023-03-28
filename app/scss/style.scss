@@ -125,6 +125,7 @@
 
 .cases {
     padding-top: 7px;
+    margin-bottom: 11px;
     &__title {
     }    
     &__descr {
@@ -172,18 +173,32 @@
 
 
 .sounds {
+    padding-top: 60px;
+    padding-bottom: 163px;
     &__title {
     }
     &__descr {
+        margin-bottom: 70px;
     }
     &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         &-img {
         }
     }
     &__items {
+        width: 650px;
     }
     &__item {
+        width: 100%;
+        margin-bottom: 50px;
+        padding: 30px 40px 32px 40px;
+        background: linear-gradient(90deg, #C3E2DE 27.22%, #CFF1ED 48.89%, #EDFBF9 96.77%);
+        border-radius: 15px;
+        box-shadow: -26px 4px 79px rgba(168, 207, 202, 0.39);
         &-title {
+            margin-bottom: 10px;
         }
         &-descr {
         }
