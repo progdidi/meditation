@@ -4,6 +4,7 @@
 
 
 .header {
+    margin-bottom: 100px;
     &__top {
         background-color: #fff;
         
@@ -46,7 +47,6 @@
     &__promo {
         padding-top: 70px;
         background-color: $main-color;
-        margin-bottom: 10px;
         &-title {
             font-family: 'Merienda One', sans-serif;
             font-size: 68px;
@@ -83,39 +83,87 @@
 
 
 .practics {
+    padding-top: 20px;
+    padding-bottom: 45px;
+    margin-bottom: 70px;
     &__items {
+        display: flex;
+        justify-content: space-between;
     }
     &__item {
+        background-color: #FFFFFF;
+        box-shadow: 0px 19px 50px rgba(26, 127, 114, 0.15);
+        border-radius: 20px;
+        max-width: 420px;
+        padding: 50px 48px 92px 48px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         &-img {
+            margin-bottom: 20px;
+
         }
         &-title {
+            margin-bottom: 20px;
         }
         &-descr {
+            text-align: center;
+            margin-bottom: 60px;
+            font-size: 18px;
+            line-height: 23px;
+            color: #000;
         }
         &-link {
             display: inline-block;
             @include btn-style;
+            max-width: 210px;
+            padding: 12px 44px;
         }
     }
 }
 
 
 .cases {
+    padding-top: 7px;
     &__title {
     }    
     &__descr {
+        margin-bottom: 70px;
     }
     &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         &-img {
         }
     }
 
     &__items {
+        width: 717px;
     }
     &__item {
+        width: 100%;
+        background-color: transparent;
+        padding: 35px 60px 35px 40px;
+        margin-bottom: 50px;
+        
+        &:hover {
+            background-color: #fff;
+            box-shadow: 0px 8px 50px rgba(26, 127, 114, 0.2);
+            border-radius: 15px;
+            .cases__item-img {
+                opacity: 1;
+            }
+        }
         &-link {
+            
+        }
+        &-img {
+            opacity: 0;
+            float: right;
         }
         &-title {
+            margin-bottom: 10px;
         }
         &-text {
         }

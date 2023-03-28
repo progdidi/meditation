@@ -68,7 +68,19 @@ button{
 
     }
     &__descr {
-
+        max-width: 1105px;
+        text-align: center;
+        margin: 0 auto;
     }
 }
+
+.item {
+    &__title {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 47px;
+    }
+}
+
+
 
