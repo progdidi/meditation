@@ -1,24 +1,40 @@
 @import 'var';
 
+html {
+    box-sizing: border-box;
+}
+
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+    box-sizing: inherit;
     padding: 0;
     margin: 0;
 }
 
-body {
-    // font-family: 'Montserrat', sans-serif;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    line-height: 25px;
+@font-face {
+    font-family: 'Edo';
+    src: url(../fonts/edo.ttf);
+    font-weight: 400;
 }
 
-.container__fluid{
-    max-width: 1330px;
-    padding: 0 10px;
-    margin: 0 auto;
+@font-face {
+    font-family: 'Merienda One';
+    src: url(../fonts/MeriendaOne-Regular.ttf);
+    font-weight: 400;
+}
+
+body {
+    font-family: 'Heebo', sans-serif;
+    font-size: 24px;
+    line-height: 31px;
+    color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(26, 127, 114, 0.03);
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+    color: #000;
 }
 
 a{
@@ -28,61 +44,31 @@ a{
 
 button{
     cursor: pointer;
+    border: none;
+    background-color: transparent;
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 1540px;
     padding: 0 10px;
     margin: 0 auto;
 }
 
-.pink-btn {
-    background-color: $pink-color;
-    border-radius: 12px;
-    padding: 8px 26px 11px 29px;
-    color: #FFFFFF;
-    border: none;
-}
 
-.section__subtitle{
-    font-weight: 700;
-    font-size: 18px;
-    width: max-content;
-    margin: 0 auto;
-    line-height: 25px;
-    color: $title-color;
-    margin-bottom: 4px;
-    position: relative;
-    z-index: 4;
-    &::before{
-        content: '';
-        position: absolute;
-        width: 34px;
-        height: 36px;
-        background-image: url(../images/beforesub.svg);
-        left: -14px;
-        top: -11px;
-        z-index: -2;
+.section {
+    &__title {
+        font-family: 'Merienda One', sans-serif;
+        font-weight: 400;
+        font-size: 54px;
+        line-height: 70px;
+        max-width: 706px;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 22px;
+
     }
+    &__descr {
 
+    }
 }
 
-.section__title{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 65px;
-    line-height: 58px;
-    color: #222222;
-    text-align: center;
-
-}
-
-
-
-.item__subtitle {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 16px;
-    color: $title-color;
-}
