@@ -129,7 +129,6 @@
     &__title {
     }    
     &__descr {
-        margin-bottom: 70px;
     }
     &__content {
         display: flex;
@@ -175,10 +174,10 @@
 .sounds {
     padding-top: 60px;
     padding-bottom: 163px;
+    margin-bottom: 58px;
     &__title {
     }
     &__descr {
-        margin-bottom: 70px;
     }
     &__content {
         display: flex;
@@ -208,13 +207,26 @@
 
 
 .best {
+    padding-top: 86px;
+    background-color: $main-color;
+    padding-bottom: 162px;
+    margin-bottom: 53px;
     &__title {
     }
     &__descr {
     }
     &__items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 490px;
+        grid-row-gap: 100px;
     }
     &__item {
+        background: linear-gradient(270deg, #C3EEE8 26.37%, rgba(195, 226, 222, 0.75) 63.87%, rgba(231, 243, 242, 0.4) 103.6%);
+        border-radius: 15px;
+        padding: 25px 35px 25px 79px ;
+        margin-bottom: 10px;
+        text-align: right;
         &-title {
         }
         &-descr {
@@ -224,6 +236,9 @@
 
 
 .transform {
+    padding-top: 67px;
+    padding-bottom: 61px;
+    margin-bottom: 22px;
     &__title {
     }
     &__descr {
@@ -231,23 +246,38 @@
     &__items {
     }
     &__item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 70px;
+        &:nth-child(2) {
+            flex-direction: row-reverse;
+        }
         &-img {
         }
         &-content {
+            width: 619px;
         }
         &-title {
+            margin-bottom: 17px;
         }
         &-text {
         }
         &-link {
             display: inline-block;
             @include btn-style;
+            margin-top: 30px;
+            max-width: 210px;
+            padding: 12px 44px;
         }
     }
 }
 
 
 .footer {
+    padding-top: 113px;
+    padding-bottom: 30px;
     &__logo {
         &-img {
         }
