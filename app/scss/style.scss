@@ -41,12 +41,28 @@
                     
                 }
             }
+            &__btn {
+                width: 40px;
+                height: 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 0;
+                border: none;
+                background-color: transparent;
+                display: none;
+                span {
+                    height: 4px;
+                    width: 100%;
+                    background-color: $main-color;
+                }
+            }
         }
     }
 
     &__promo {
         padding-top: 70px;
-        background-color: $main-color;
+        background-image: url(../images/bgi/promo.svg);
         &-title {
             font-family: 'Merienda One', sans-serif;
             font-size: 68px;
@@ -208,8 +224,8 @@
 
 .best {
     padding-top: 86px;
-    background-color: $main-color;
-    padding-bottom: 162px;
+    background-image: url(../images/bgi/best.svg);
+    padding-bottom: 215px;
     margin-bottom: 53px;
     &__title {
     }
@@ -326,6 +342,8 @@
         }
     }
 }
+
+@import 'media';
 
 
 

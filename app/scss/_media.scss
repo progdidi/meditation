@@ -1,0 +1,55 @@
+@import 'global';
+@import 'var';
+@import 'reset';
+
+@media (max-width: 1290px) {
+    .header {
+        &__top {
+            .logo {
+                position: relative;
+                z-index: 10;
+            }
+    
+            .menu {
+                &__btn {
+                    display: flex;
+                    right: 10px;
+                    top: 90px;
+                    position: absolute;
+                    z-index: 10;
+                    cursor: pointer;
+                }
+                &__list {
+                    position: absolute;
+                    z-index: 5;
+                    background-color: $main-color;
+                    flex-direction: column;
+                    padding-top: 100px;
+                    height: 100vh;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    align-items: center;
+                    justify-content: center;
+                    transform: translateY(-100%);
+                    transition: all 0.5s ease;
+                    &.menu__list-active {
+                        transform: translateY(0);
+                    }
+                    &-item {
+                        padding: 20px 0;
+                        padding-left: 0;
+                    }
+                    &-item + .menu__list-item {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+        
+        
+    }
+
+    
+    
+}
