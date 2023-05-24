@@ -8,4 +8,19 @@ $(function(){
         menuBtn.style.backgroundColor = "white";
     })
 
+    //scroll
+
+    window.addEventListener('scroll', () => {
+        const header = document.querySelector('.header__top');
+        const scrollHeight = window.pageYOffset;
+        const headerHeight = header.getBoundingClientRect().height;
+        if(scrollHeight > headerHeight) {
+          
+          header.classList.add('fixed-header')
+        } else {
+          console.log(scrollHeight)
+          header.classList.remove('fixed-header')
+        }
+      })
+
 });

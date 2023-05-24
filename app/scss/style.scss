@@ -97,6 +97,15 @@
     }
 }
 
+.fixed-header {
+    position: fixed;
+    background-color: $main-color;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+}
+
 
 .practics {
     padding-top: 20px;
