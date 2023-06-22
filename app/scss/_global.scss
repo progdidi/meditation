@@ -29,7 +29,7 @@ body {
     font-size: 24px;
     line-height: 31px;
     color: rgba(0, 0, 0, 0.5);
-    background-color: rgba(26, 127, 114, 0.03);
+    background: linear-gradient(180deg, #D9F1EB 0%, rgba(217, 241, 235, 0.00) 100%);
 }
 
 h1, h2, h3,
@@ -49,7 +49,7 @@ button{
 }
 
 .container {
-    max-width: 1540px;
+    max-width: 1420px;
     padding: 0 10px;
     margin: 0 auto;
 }
@@ -82,6 +82,7 @@ button{
         line-height: 47px;
     }
 }
+
 
 
 

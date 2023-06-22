@@ -16,7 +16,7 @@ $(function(){
         const headerHeight = header.getBoundingClientRect().height;
         if(scrollHeight > headerHeight) {
           
-          header.classList.add('fixed-header')
+          header.classList.add('fixed-header');
         } else {
           console.log(scrollHeight)
           header.classList.remove('fixed-header')
