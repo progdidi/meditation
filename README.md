@@ -1,3 +1,1 @@
-### Mediation website
-
-## made with HTML, CSS, JS
+### Mediation - landing page about meditation
